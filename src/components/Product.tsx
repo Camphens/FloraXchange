@@ -38,8 +38,8 @@ export default class Product extends React.Component <any, any> {
 
                 <div className="product-text">
                     <div className="product-text-row title">{item.Naam}</div>
-                    <div className="product-text-row">Hoogte:  {item.Hoogte}</div>
-                    <div className="product-text-row">Potmaat: {item.Potmaat}</div>
+                    <div className="product-text-row">{item.Hoogte === "" ? "" : ("Hoogte: ")}{item.Hoogte}</div>
+                    <div className="product-text-row">{item.Potmaat === "" ? "" : ("Potmaat: ")}{item.Potmaat}</div>
                 </div>
             </div>
         )
